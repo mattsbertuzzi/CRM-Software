@@ -1,0 +1,12 @@
+@import "./EmailModal.css";
+
+.date-time-row {
+  display: flex;
+  gap: 10px;
+}
+
+.date-time-row > div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}

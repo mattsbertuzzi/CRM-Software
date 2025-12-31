@@ -1,0 +1,170 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-navbar);
+  padding: 0 24px;
+  height: 60px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 100;
+}
+
+/* Left side: logo and desktop links */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-link {
+  color: white;
+  font-size: 1rem;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  color: var(--color-primary);
+}
+
+/* Right side: buttons and profile */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Buttons */
+.navbar-btn {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 8px 14px;
+  border-radius: var(--border-radius);
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-btn:hover {
+  background-color: #2563eb; /* darker blue */
+}
+
+/* Profile icon & dropdown */
+.navbar-profile {
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar-profile .profile-icon {
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.navbar-profile .profile-icon:hover {
+  color: #c0c0c0;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border-radius: 4px;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.profile-dropdown button {
+  padding: 8px 12px;
+  border: none;
+  background: none;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+
+.profile-dropdown button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Small info text for disabled fields */
+.disabled-info {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 2px;
+  display: block;
+}
+
+/* Navbar links container (desktop and mobile) */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Hamburger menu for mobile */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  /* Left and right alignment */
+  .navbar-left {
+    flex: 1;
+  }
+
+  /* Hide links initially on mobile */
+  .navbar-links {
+    position: absolute;
+    top: 60px; /* below navbar */
+    left: 0;
+    right: 0;
+    background-color: var(--color-navbar);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 24px;
+    display: none;
+  }
+
+  /* Show when hamburger is open */
+  .navbar-links.open {
+    display: flex;
+  }
+
+  /* Mobile links/buttons take full width */
+  .navbar-links .navbar-link,
+  .navbar-links .navbar-btn {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  /* Hamburger icon */
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}

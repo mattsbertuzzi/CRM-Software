@@ -1,0 +1,26 @@
+.pipeline-container {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 12px 0;
+  }
+  
+  .pipeline-column {
+    background-color: #f9fafb;
+    border-radius: var(--border-radius);
+    min-width: 200px;
+    padding: 12px;
+    flex-shrink: 0;
+  }
+  
+  .pipeline-column h4 {
+    margin-bottom: 12px;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+  
+  .stage-prospecting { background-color: #e0f2fe; }
+  .stage-negotiation { background-color: #fef3c7; }
+  .stage-closed-won { background-color: #dcfce7; }
+  .stage-closed-lost { background-color: #fee2e2; }
+  

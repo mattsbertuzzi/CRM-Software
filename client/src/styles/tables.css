@@ -1,0 +1,72 @@
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .table-container {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    overflow: hidden;
+  }
+  
+  .crm-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .crm-table th {
+    text-align: left;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 12px;
+    background-color: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .crm-table td {
+    padding: 12px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .table-row {
+    cursor: pointer;
+    transition: background-color 0.15s;
+  }
+  
+  .table-row:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .link {
+    color: var(--color-primary);
+    cursor: pointer;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .muted {
+    color: #9ca3af;
+  }
+  
+  /* Deal stage colors */
+.deal-stage {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  display: inline-block;
+  color: #000000;
+}
+
+.stage-lead { background-color: #fcd34d !important; }          /* pastel amber */
+.stage-qualified { background-color: #fde68a !important; }     /* lighter amber */
+.stage-proposal { background-color: #93c5fd !important; }      /* pastel blue */
+.stage-negotiation { background-color: #6ee7b7 !important; }   /* pastel green */
+.stage-closed-won { background-color: #5eead4 !important; }    /* pastel teal */
+.stage-closed-lost { background-color: #fca5a5 !important; }  /* pastel red */

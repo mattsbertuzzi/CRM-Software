@@ -1,0 +1,14 @@
+/* variables.css */
+:root {
+    --color-background: #ffffff;
+    --color-navbar: #1f2937; /* dark gray/blue */
+    --color-primary: #3b82f6; /* blue accent */
+    --color-pastel-green: #d1fae5;
+    --color-pastel-red: #fee2e2;
+    --color-pastel-yellow: #fef9c3;
+    --color-text: #111827; /* dark text */
+    --border-radius: 8px;
+    --padding: 12px;
+    --font-family: 'Inter', sans-serif;
+  }
+  
